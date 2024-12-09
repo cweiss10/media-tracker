@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "media-tracker-backend"
+version = "0.1.0"
+description = "Media Tracking App"
+authors = ["Cat Weiss"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+fastapi = {extras = ["all"], version = "^0.115.6"}
+uvicorn = "^0.32.1"
+sqlalchemy = "^2.0.36"
+pydantic = "^2.10.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
